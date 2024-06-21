@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no" />
+    <title>Howler.js Audio Player</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1184.0" data-gr-ext-installed="">
+    <div id="title">
+      <span id="track"></span>
+      <div id="timer"></div>
+      <div id="duration"></div>
+    </div>
+
+    <div class="controlsOuter">
+      <div class="controlsInner">
+        <div id="loading" style="display: none"></div>
+        <div class="btn" id="playBtn" style="display: block"></div>
+        <div class="btn" id="pauseBtn" style="display: none"></div>
+        <div class="btn" id="prevBtn"></div>
+        <div class="btn" id="nextBtn"></div>
+      </div>
+      <div class="btn" id="playlistBtn"></div>
+      <div class="btn" id="volumeBtn"></div>
+    </div>
+
+    <div id="waveform" style="margin: -99.9px auto; display: none">
+      <canvas
+        width="682"
+        height="199"
+        style="height: 100%; width: 100%"
+      ></canvas>
+    </div>
+    <div id="bar" style="display: block"></div>
+    <div id="progress" style="width: 49.2834%"></div>
+
+    <div id="playlist">
+      <div id="list">
+        <div class="list-song">No playlist</div>
+      </div>
+    </div>
+
+    <div id="volume" class="fadeout">
+      <div id="barFull" class="bar"></div>
+      <div id="barEmpty" class="bar"></div>
+      <div id="sliderBtn" style="left: 622.9px"></div>
+    </div>
+
+    <script src="./howler.js"></script>
+    <script src="./siriwave.js"></script>
+    <script src="./player.js"></script>
+  </body>
+</html>
